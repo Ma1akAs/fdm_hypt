@@ -37,7 +37,7 @@
 	</script>
 		<!-- partial:index.partial.html -->
 		<div class="container">
-			<h2>💁🏼欢度国庆，<span class="title">Tools</span></h2>
+			<h2>BYD又想出去了是吧</h2>
 			<div class="accordion">
 				<div class="accordion-item">
 					<button id="accordion-button-1" onclick="goto('./missingOld/index.html')"><span
@@ -67,24 +67,6 @@
 						<p>简介：辅导猫样式是全国高校生请假条模板，是大多数高校都在使用的请假条类型，<a href="./missingCat/index.html"
 								target="_blank"><b>可点击标题跳转或此处跳转</b></a>。出行请注意安全，疫情防控期间请佩戴好口罩，本页面仅供前端学习使用，不承担任何安全责任。部分低端手机可能出现跳转慢和不跳转的情况。请不要急躁，耐心等待或尝试重新刷新页面，请不要连续多次点击，避免网页卡死。
 						</p>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<button id="accordion-button" aria-expanded="false"><span
-							class="accordion-title">👍🏻二手交流群</span><span class="another"
-							aria-hidden="true"></span></button>
-					<div class="accordion-content">
-						<p>简介：为广大河职院在校学生提供二手闲置物品交易平台，提供生活服务和学生互相交流的主要平台。</p>
-						<img src="./img/qun.jpg" alt="" srcset="">
-					</div>
-				</div>
-				<div class="accordion-item">
-					<button id="accordion-button" aria-expanded="false"><span
-							class="accordion-title">👍🏻意见反馈</span><span class="another"
-							aria-hidden="true"></span></button>
-					<div class="accordion-content">
-						<p>大家好，首先非常感谢大家对我们的支持，这是我们第一次对界面进行整改和优化，提高了网站整体的流畅性，为了以后能更好发扬优势并改进不足，因此欢迎大家积极给我们提供意见反馈，这将使我们的工作不断进步和提升，您的意见将会是我们最宝贵的财富。最后，非常感谢大家的支持和认可。意见反馈邮箱：<a
-								href="mailto:userspring@proton.me">userspring@proton.me</a></p>
 					</div>
 				</div>
 			</div>
@@ -142,38 +124,6 @@
 
 
 		<script>
-			let title = document.querySelector('.title');
-			let hours = new Date().getHours();
-			console.log(hours);
-			switch (true) {
-				case hours >= 19:
-					title.innerHTML = '晚上好';
-					break;
-				case hours >= 18:
-					title.innerHTML = '傍晚好';
-					break;
-				case hours >= 14:
-					title.innerHTML = '下午好';
-					break;
-				case hours >= 12:
-					title.innerHTML = '中午好';
-					break;
-				case hours >= 9:
-					title.innerHTML = '上午好';
-					break;
-				case hours >= 7:
-					title.innerHTML = '早上好';
-					break;
-				case hours >= 5:
-					title.innerHTML = '清晨好';
-					break;
-				case hours >= 0:
-					title.innerHTML = '凌晨好';
-					break;
-				default:
-					title.innerHTML = 'Tools';
-			}
-
 			function goto(url) {
 				window.location.href = url;
 			}
